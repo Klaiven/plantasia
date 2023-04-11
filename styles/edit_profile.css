@@ -1,0 +1,96 @@
+body {
+    /* font-family: Tahoma; */
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    background-size: cover;
+    /* background-color: red;   */
+    text-align: center;
+    /* background-image: url(https://64.media.tumblr.com/2a6f7af8cfb46d49606f4082a2cddd6d/0f9f60d1b44eb6c2-a7/s1280x1920/b44218769dea6b6c1a81864bc57883a75b703971.jpg); */
+    /* color: white; */
+  }
+
+
+  .geral{
+    max-width: 500px;
+    height: 687px;
+    /* margin: 0 auto; */
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* background-color: rgb(44, 186, 146); */
+  }
+
+.geral form input , select {
+    /* background-color: pink; */
+    display: block;
+    /* margin: 0 auto; */
+}
+
+.geral form input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 341px;
+    /* border-bottom: 5px; */
+    /* background-color:rgb(44, 186, 146);  */
+    margin-bottom: 17px;
+}
+
+.geral form input:focus{
+    outline: none;
+}
+
+
+.img-perfil{
+    border-radius:50%;
+    margin-bottom: 20px;
+}
+
+
+
+.geral input[type="submit"]{
+    display: inline;
+    border: 5px;
+    border-radius: 5vh;
+    /* height: 6vh;
+    width: 16vh; */
+    width: 180px;
+    height: 60px;
+    font-size: 16px;
+    /* margin-right: 3vh; */
+}
+
+.geral .botao-cancelar{
+    background-color: #ff5b5b;
+    color: #000000;
+}
+
+.geral .botao-confirmar{
+    background-color: #45b54c;
+    color: #ffffff;
+    margin-left: 3vh;
+}
+
+
+
+/* GERAL-ITENS */
+
+.geral-itens{
+    /* background-color: purple; */
+    max-width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.geral-itens select{
+   text-align: left;
+   border-radius: 5vh;
+   background-color: #d9d9d9;
+   color: #323232;
+   margin-top: 1vh;
+   margin-bottom: 8vh;
+   width: 167px;
+}
