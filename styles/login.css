@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+.Cabecalho{
+    background-image: url("/img/planta-background.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    font-family: 'Aclonica';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.Conteudo_principal{
+    font-family: 'Anek Latin';
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.Conteudo_principal_titulo{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.Conteudo_principal_entrar{
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 80px;
+    flex-direction: column;
+}
+
+input{
+    padding: 0 5px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+.lock{
+    margin-top: 20px;
+}
+
+.forgot{
+    margin-top: 10px;
+    font-size: small;
+    margin-left: 60px;
+}
+
+.icon, .lock{
+    display: flex;
+    border-bottom: 1px solid #000000;
+    padding: 3px;
+    margin-right: 70px;
+}
+
+.Conteudo_principal_seta{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #45B54C;
+    margin-left: 240px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.Conteudo_principal_icones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 45px;
+    margin-top: 30px;
+    
+}
+
+.Conteudo_principal_loginFB{
+    background: #1877F2;
+    padding: 8px 0px; 
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /*margin-top: 90px;*/
+    height: 30px;
+    width: 120px;
+}
+
+.facebook{
+    margin-bottom: 6px;
+}
+
+.Conteudo_principal_loginGG{
+    background: #E2E2E2;
+    padding: 8px 0px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    margin: auto;
+    /*margin-top: 10px;*/
+    height: 30px;
+    width: 120px;
+   }
+
+.Conteudo_principal_cadastro{
+    background: #E2E2E2;
+    padding: 10px 65px; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    font-family:'Anek Latin' ;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    height: 30px;
+    width: 128px;   
+}
+
+.Conteudo_principal_loginOU p{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    font-size: small;
+}
+
+.Conteudo_principal_loginOU::before{
+    position: absolute;
+    content: '';
+    background-color: #424242;
+    width: 7rem;
+    height: 2px;
+    left: 1;
+    bottom: 20;
+    margin-left: 50px;
+    margin-top: 7px;
+}
+
+.Conteudo_principal_loginOU::after{
+    position: absolute;
+    content: '';
+    background-color: #424242;
+    width: 7rem;
+    height: 2px;
+    margin-left: 185px;
+    margin-bottom: 100px;
+}
