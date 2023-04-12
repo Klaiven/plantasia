@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inter:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+
+}
+
+body{
+    font-size: 100%;
+}
+
+.cabecalho{
+display: flex;
+}
+
+.cabecalho-imagem{
+padding: 10px; 
+width: 80px;
+height: 80px;
+transition: 0.35s ease; 
+border-radius: 50% ; 
+}
+
+.menu{
+  justify-content: space-between;  
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+.cabecalho-botao{
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    background-color:#646464;
+    border-radius: 10px;
+    color: white;
+    width: 94.88px;
+    height:23px;
+    cursor:pointer;
+}
+
+.conteudo-principal-titulo{
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.conteudo-secundario{
+    font-family: 'Archivo', sans-serif; font-size: 20px; font-style: normal;
+    font-weight: 500;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.linha-card{
+    align-items:stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden; 
+    
+}
+.container-card{
+padding: .75rem;
+justify-content: center;
+flex-wrap: wrap;
+font-family: 'Archivo', sans-serif;
+font-size: 15px;
+gap:2rem;
+padding-top: 2rem;
+margin-bottom: 2rem;
+}
+.card-garden img{
+width: 160px; height: 160px;
+transition: 0.35s ease;
+border-radius: 30px;
+margin-bottom: .75rem;
+
+
+}
+.card-garden img:hover{
+transform: scale(0.9)translateY(5px); 
+cursor: pointer;
+
+
+}
+
