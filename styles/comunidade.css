@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    border-bottom: solid black 0.2px;
+}
+
+header div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    margin-left: -20px;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+.profileimg > img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+.user img{
+    width: 100px;
+    border-radius: 50%;
+}
