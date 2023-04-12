@@ -2,15 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
 .Cabecalho{
-    background-image: url("/img/planta-background.png");
+    background-image: url("/img/planta.jpg");
     background-repeat: no-repeat;
-    height: 100px;
-    font-family: 'Aclonica';
-    font-size: 24px;
-    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+    height: 130px;
+    width: 100%;
     text-align: center;
-    margin-top: 30px;
 }
+
+.Cabecalho_titulo h1{
+    padding-top: 50px;
+    padding-bottom: 48px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffff;
+    font-family: 'Aclonica';
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .Conteudo_principal{
     font-family: 'Anek Latin';
 }
@@ -149,11 +160,11 @@ input:focus{
     position: absolute;
     content: '';
     background-color: #424242;
-    width: 7rem;
+    width: 6.9rem;
     height: 2px;
     left: 1;
     bottom: 20;
-    margin-left: 50px;
+    margin-left: 42px;
     margin-top: 7px;
 }
 
@@ -164,5 +175,9 @@ input:focus{
     width: 7rem;
     height: 2px;
     margin-left: 185px;
-    margin-bottom: 100px;
+    margin-top: -6px;
+}
+
+a{
+    color: #ffff;
 }

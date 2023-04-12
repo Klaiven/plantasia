@@ -145,3 +145,7 @@
     vertical-align: bottom;
     padding-left: 25px;
   }
+
+  li:nth-child(1){
+    color: #45B54C;
+  }
