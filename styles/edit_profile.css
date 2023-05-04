@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap');
+
 body {
     /* font-family: Tahoma; */
-    font-family: 'Inter', sans-serif;
+    font-family: 'Anek Latin', sans-serif;
     width: 100%;
     margin: 0;
     font-size: 1rem;
@@ -78,11 +80,23 @@ body {
 
 /* GERAL-ITENS */
 
+.geral_video{
+    width: 70px;
+    margin-bottom: 20px;
+    position: absolute;
+    justify-content: center;
+}
+
+.geral_imagem{
+    position: relative;
+}
+
 .geral-itens{
     /* background-color: purple; */
     max-width: fit-content;
     margin: 0 auto;
     text-align: left;
+    margin-top: 20px;
 }
 
 .geral-itens select{

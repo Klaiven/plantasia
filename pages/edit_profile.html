@@ -5,13 +5,17 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/style/edit_profile.css">
+   <link rel="stylesheet" href="/styles/edit_profile.css">
    <title>Edit Profile - Plantasia</title>
 </head>
 
 <body>
    <div class="geral">
-      <img src="idosa.png" class="img-perfil" alt="foto de perfil">
+      <p class="geral_textovideo">clique no rosto abaixo para capturarmos uma imagem sua!</p>
+      <div class="geral_camera" data-camera>
+         <img src="/img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento" data-video-botao class="geral_video">
+         <video class="geral_imagem" width="80" height="120" autoplay data-video></video>
+      </div>
       <form>
          <div class="geral-itens">
             <label for="nome">Nome:</label>
@@ -42,7 +46,7 @@
          <input type="submit" class="botao-confirmar" value="Confirmar">
       </form>
    </div>
-
+   <script src="/script/camera.js"></script>
 </body>
 
 </html>
