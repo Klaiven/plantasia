@@ -1,0 +1,121 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&family=Archivo:wght@200&display=swap');
+
+/*botão voltar*/
+
+
+#voltar{
+    align-self: center;
+   
+    margin-bottom: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgba(173, 169, 182, 0.25);
+    padding: 0px;
+
+    
+}
+#voltar img{
+    width:25px;
+    height:25px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+#divBusca{
+    margin-top: 15px;
+    background-color:rgba(133, 124, 124, 0.37);
+    width:85%;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 5px;
+    margin-bottom: 30px;
+    
+ }
+
+  
+  #txtBusca{
+    width:100%;
+    float:left;
+    background-color:transparent;
+    padding-left:50px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    
+  }
+.titulo{
+    font-family: 'Archivo';
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 9%;
+    
+}
+.subtitulo{
+    font-family: 'Archivo';
+    left: 9%;
+    top:21%;
+    padding-left: 5%;
+    
+}
+
+.post{
+    
+    
+    display: flex;
+    width: 85%;
+    justify-content: space-evenly;
+    font-family: 'Anek Latin', sans-serif;
+    height: 200px;
+    
+}
+.info{
+    
+    align-items: right;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    height: 130px;
+}
+.post .imgpost{
+    border-radius: 15px;
+    height: 100%;
+    width: 40%;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.info p{
+    font-size: 12px;
+    
+}
+.info h2{
+    font-size: 1.2rem;
+    position: center;
+    
+   
+
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.postagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+}
