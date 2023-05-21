@@ -2,7 +2,7 @@
 
 /*imagem de fundo do topo*/
 .topo {
-    background-image: url(/img/news_img/muda2.webp);
+    background-image: url(/img/news_img/noticia_muda2.webp);
     background-size: cover;
     position: static;
 }

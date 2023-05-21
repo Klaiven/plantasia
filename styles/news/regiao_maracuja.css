@@ -2,7 +2,7 @@
 
 /*imagem de fundo do topo*/
 .topo {
-    background-image: url(../../img/news_img/dicas_banana1.webp);
+    background-image: url(/img/news_img/regiao_maracuja2.webp);
     background-size: cover;
     position: static;
 }
