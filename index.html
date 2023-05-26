@@ -5,13 +5,17 @@
         <title>Inicio</title>
         <link rel="stylesheet" href="../styles/inicio.css">
         <link rel="stylesheet" href="../styles/reset.css">
+        <script src="https://kit.fontawesome.com/9822727e09.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <header>
             <div id="buttons">
                 <button class="icone_menu"><img src="/img/icone_menu.png"><a href="#"></a></button>
-                <button class="icones_topo_direito"><img src="/img/icone_notificacao.png"><a href="#"></a></button> 
-                <button class="icones_topo_direito"><img src="/img/icone_pesquisa.png"><a href="#"></a></button>
+                
+                <a href="pages/search.html">
+                  <button class="icones_topo_direito"><img src="/img/icone_pesquisa.png"></button>
+                </a>
             </div>
 
             <h1 class="news">NOTICIAS</h1>
@@ -165,9 +169,10 @@
                 </div>
               </div>
 
+
               <h2 class="subtopico">DA SUA REGIÃO</h2>
 
-              <div class="container">
+              <div class="container regiao">
                 <div class="linha_subtopico">
 
                   <a href="../pages/news/regiao_umbu.html">
@@ -209,5 +214,14 @@
                 </div>
               </div>
         </header>
+        <footer>
+          <div class="menubar">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <i class="fa-sharp fa-solid fa-plus"></i>
+            <a href="./pages/profile.html">
+              <i class="fa-sharp fa-solid fa-user"></i>
+            </a>
+          </div>
+        </footer>
     </body>
 </html>

@@ -119,3 +119,10 @@
     align-items: center;
     height: 175px;
 }
+
+.link{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: black;
+}
