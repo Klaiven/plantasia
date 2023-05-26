@@ -243,6 +243,9 @@ object-fit: cover;
     color: #45B54C;
   }
 
+  .outros{
+    margin-bottom: 30px;
+  }
 
 
   .menubar{
@@ -253,7 +256,7 @@ object-fit: cover;
     background-color: white;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(0, 0, 0, 0.4);
     bottom: 0px;
   }
 
