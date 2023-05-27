@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+body {
+	margin:0px;
+}
+
+/*imagem de fundo do topo*/
+#img_topo {
+	display:block;
+	width:99.999%;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+    border-top:0px;
+}
+
+.opacidade {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, .15)
+}
+
+/*botão voltar*/
+#voltar {
+	position:absolute;
+    margin: 30px;
+    margin-bottom: 0px;
+    width: 80px; 
+    height: 80px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: rgba(240, 219, 219, 0.6);
+}
+
+#voltar img {
+    width: 80px; height: 80px;
+}
+
+/*titulo e subtitulos*/
+#titulo {
+	position:absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -230px;
+    margin-left: 15px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+h2#sub-titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 80px;
+	color: white;
+	margin-left: 15px;
+	margin-top:-140pt;
+}
+
+.bloco_vazio {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    border-color: rgb(255, 255, 255);
+}
+
+/* parte inferior com os textos */
+.interface {
+    
+    margin:120px auto;
+    width: 90%;
+}
+
+.interface h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.interface p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.interface ul, li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+#img_meio {
+	display:block;
+    width: 90%;
+	border-radius: 50px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.img_rodape, .autoria {
+    display: flex;
+
+}
+
+.img_rodape {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.autoria {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    vertical-align: top;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn {
+	visibility:hidden;
+}
+
+@media (min-width: 800px) {
+    body, html {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .bloco_vazio {
+        visibility: hidden;
+    }
+
+    #img_topo {
+		display:block;
+		width:100%;
+        height: 400px;
+		margin-top: 150px;
+		margin-left: auto;
+		margin-right: auto;
+        border-radius: 50px;
+    }
+
+    h1#titulo{
+        text-align: left;
+        margin-top: 50px;
+		margin-bottom:10px;
+        color: black;
+		font-size:50px;
+    }
+
+    .topo, #sub-titulo, #voltar, .opacidade {
+        visibility: hidden;
+    }
+
+    .interface {
+        text-align: inherit;
+        margin-top: 350px;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 0px;
+    }
+
+    .interface h2 {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:60px;
+		margin-top:100px;
+		margin-bottom:15px;
+    }
+
+
+    .interface p {
+        text-align: justify;
+		font-size:40px;
+    }
+
+    .interface ul, li {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px
+	}
+	
+	.img_meio {
+		display:block;
+		width: 50%;
+		border-radius: 50px;
+        margin-top:50px;
+		margin-left:auto;
+		margin-right:auto;
+    }
+
+    /*botão voltar*/
+   .btn {
+    display: inline-block;
+       padding: 15px 60px;
+       font-size: 1.1rem;
+       text-transform: uppercase;
+       font-weight:700 ;
+       text-decoration: none;
+       background: #111;
+       color: #eee;
+       border-radius: 75px;
+       transition: background 500ms ease;
+       margin-left: 50vh;
+   }
+}
