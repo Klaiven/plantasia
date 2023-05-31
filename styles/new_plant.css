@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Inter:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+.container{
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  /* height: 100vh; */
+}
+.container-icon {
+ width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-icon h1{
+  font-family: 'Archivo';
+  font-size: 27px;
+  margin-right:45%;
+
+}
+
+.back-button {
+  margin-bottom: 10px; 
+  margin-right: 90%;
+  width: 15%;
+  height: auto;
+}
+
+  .upload-icon {
+    display: flex;
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: solid 1px black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+
+  #previewContainer > img{
+    display: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: solid 1px black;
+  }
+  
+  #uploadInput{
+    background-color: none;
+    color: rgba(0, 0, 0, 0);
+    height: 200px;
+    text-align: center;
+  }
+
+  #uploadInput > input > #file-upload-button{
+    background-color: red;
+    color: white;
+    height: 200px;
+    display: none;
+  }
+
+  #upload-input {
+    display: none;
+  }
+  
+  .text-input {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border-color: #F5F5F5;
+    box-sizing: border-box;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cancel-button,
+  .next-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #FF5B5B;
+    color: black;
+    border: none;
+    border-radius: 110px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 50px;
+  }
+
+  .next-button {
+    background-color: #45B54C;
+    color: #fff;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: row;
+    }
+    container-icon {
+      width: 40%; 
+      text-align: left; 
+      margin-top: 0;
+    }
+
+    .back-button {
+      margin-right: 0; 
+    }
+
+    .container-icon h1 {
+      font-size: 20px;
+      margin-right: 0;
+      text-align: left;
+    }
+  }

@@ -10,8 +10,7 @@
 
 <body>
     <header>
-       
-        <div class="cabecalho">
+        <!-- <div class="cabecalho">
             
             <img class ="cabecalho-imagem" src="../img/img_profile/mulher.jpg" alt="Profile photo"> 
                 <div class ="menu"> 
@@ -19,20 +18,20 @@
                     <div id class ="profile">@amalia </div>
             <button class = "cabecalho-botao">Editar perfil</button> 
                 </div>   
-        </div>
+        </div> -->
 
        
         <h1 class="conteudo-principal-titulo"><strong> Seu Jardim</strong></h1>
         
           
 
-        <h2 class="conteudo-secundario">Comidas</h2>  
+        <h2 class="conteudo-secundario">YOU S2</h2>  
                
         <div class ="container">
             <div class ="linha-card"> 
                         <div class="container-card">
                              <div class="card-garden">
-                                 <img src="/img/img_profile/morango_artigo.webp">
+                                 <div id="imageContainer"></div>
                             </div>
                         </div>
 
@@ -96,12 +95,30 @@
             <a href="../index.html">
                 <i class="fa-sharp fa-solid fa-house"></i>
             </a>
-          <i class="fa-sharp fa-solid fa-plus"></i>
+            <a href="./new_plant.html">
+                <i class="fa-sharp fa-solid fa-plus"></i>
+            </a>
           <a href="#">
             <i class="fa-sharp fa-solid fa-user"></i>
           </a>
         </div>
       </footer>
+
+  <script>
+    // Recupera a URL da imagem do localStorage
+    const imageURL = localStorage.getItem('imageURL');
+
+    // Verifica se há uma URL da imagem armazenada
+    if (imageURL) {
+      // Cria um elemento de imagem
+      const img = document.createElement('img');
+      img.src = imageURL;
+
+      // Adiciona a imagem ao elemento com ID "imageContainer"
+      const imageContainer = document.getElementById('imageContainer');
+      imageContainer.appendChild(img);
+    }
+  </script>
 </body>
 
 </html>

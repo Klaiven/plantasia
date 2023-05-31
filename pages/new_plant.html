@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Muda</title>   
+    <link rel="stylesheet" href="../styles/new_plant.css" type="">
+    
+</head>
+<body>
+  <div class="container">
+    <div class="container-icon">
+      
+      <div class="back-button">
+        <a href="../index.html">
+          <img src="../img/seta_voltar.png" alt="Descrição da imagem">
+        </a>
+      </div>
+
+      <h1>Nova Muda</h1>
+    </div>
+
+    <label for="upload-input" class="upload-icon">
+      <input type="file" id="upload-input" capture="camera" accept="image/*" style="display: none;"> <p>ADICIONE UMA IMAGEM</p>
+      <div id="previewContainer"></div>
+    </label>
+
+    <div class="text-input-wrapper">
+      <textarea class="text-input" placeholder="Descrição..."></textarea>
+    </div>
+
+    <div class="button-container">
+      <a href="../index.html">
+        <button class="cancel-button">CANCELAR</button>
+      </a>
+      <a href="./profile.html">
+        <button class="next-button">PRÓXIMO</button>
+      </a>
+    </div>      
+    
+    <script>
+      // Obtém referências para os elementos HTML
+      const uploadInput = document.getElementById('upload-input');
+      const previewContainer = document.getElementById('previewContainer');
+      const uploadText = document.querySelector('.upload-icon p');
+
+      // Adiciona um ouvinte de evento para o botão de upload
+      uploadInput.addEventListener('click', function() {
+        // Oculta o parágrafo de upload
+        uploadText.style.display = 'none';
+      });
+
+      // Adiciona um ouvinte de evento para o botão de upload
+      uploadInput.addEventListener('change', function(event) {
+        // Obtém o arquivo de imagem selecionado
+        const file = event.target.files[0];
+
+        // Cria um objeto FileReader
+        const reader = new FileReader();
+
+        // Define a função de tratamento para quando a leitura do arquivo for concluída
+        reader.onload = function(e) {
+          // Cria um elemento de imagem
+          const img = document.createElement('img');
+          img.src = e.target.result;
+
+          // Armazena a URL da imagem no armazenamento local do navegador
+          localStorage.setItem('imageURL', img.src);
+
+          // Limpa o conteúdo anterior do contêiner de visualização
+          previewContainer.innerHTML = '';
+
+          // Adiciona a imagem ao contêiner de visualização
+          previewContainer.appendChild(img);
+        };
+
+        // Lê o arquivo de imagem como URL de dados
+        reader.readAsDataURL(file);
+      });
+    </script>
+</body>
+</html>
